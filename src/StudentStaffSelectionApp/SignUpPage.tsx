@@ -11,13 +11,10 @@ export const SignUpPage = () => {
       const role = localStorage.getItem("selectedRole");
 
       if (role === "student") {
-      
         navigate("/studentpage");
       } else if (role === "staff") {
-        
         navigate("/staffpage");
       } else {
-       
         navigate("/");
       }
     });
@@ -29,7 +26,3 @@ export const SignUpPage = () => {
     </div>
   );
 };
-
-
-
-

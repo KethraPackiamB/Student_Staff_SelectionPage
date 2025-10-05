@@ -7,7 +7,7 @@ export const StaffPage = () => {
 
   const handleLogout = async () => {
     await signOut();
-    navigate("/"); 
+    navigate("/");
   };
 
   return (

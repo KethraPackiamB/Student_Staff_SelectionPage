@@ -7,7 +7,7 @@ export const StudentPage = () => {
 
   const handleLogout = async () => {
     await signOut();
-    navigate("/"); 
+    navigate("/");
   };
 
   return (
