@@ -7,29 +7,29 @@ export const SignUpPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-   
     signIn().then(() => {
-     
       const role = localStorage.getItem("selectedRole");
 
-      if (role === "Student") {
-        navigate("/studentpage"); 
-      } 
+      if (role === "student") {
       
-      else if (role === "Staff") {
-        navigate("/staffpage"); 
-      } 
-      
-      // else {
-      //   navigate("/"); 
-      // }
-
+        navigate("/studentpage");
+      } else if (role === "staff") {
+        
+        navigate("/staffpage");
+      } else {
+       
+        navigate("/");
+      }
     });
-  }, [signIn(), navigate]);
+  }, [signIn, navigate]);
 
   return (
     <div>
-      <p>Redirecting to sign up...</p>
+      <p>Redirecting to sign in...</p>
     </div>
   );
 };
+
+
+
+
